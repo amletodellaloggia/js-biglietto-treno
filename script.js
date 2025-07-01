@@ -9,6 +9,11 @@ let finalCost;
 
 if (passengerAge <= 17) {
 	finalCost = cost - (cost * 20) / 100;
+} 
+else if (passengerAge >= 65) {
+	finalCost = cost - (cost * 40) / 100;
 }
+
+
 
 console.log('Il costo del tuo viaggio è di €', finalCost);
