@@ -13,6 +13,9 @@ if (passengerAge <= 17) {
 else if (passengerAge >= 65) {
 	finalCost = cost - (cost * 40) / 100;
 }
+else {
+	finalCost = cost;
+}
 
 
 
