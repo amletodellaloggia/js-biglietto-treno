@@ -17,3 +17,31 @@ per controllare che la vostra logica sui prezzi funzioni correttamente, provate 
 
 100km, 10 anni => prezzo corretto:  €16.80
 100km, 70 anni => prezzo corretto: €12.60
+===
+SVOLGIMENTO:
+
+1.
+Stabilire Prezzo al KM
+
+  1.1 Acquisire KM UTENTE
+  1.2 Acquisire ETA' UTENTE
+
+Calcolare COSTO per KM inserito da UTENTE
+Calcolare il PREZZO FINALE
+
+2.
+Stabilire uno sconto in base a ETA' UTENTE e applicarlo a PREZZO FINALE
+
+ 2.1 --- se ETA' ACQUISITA UTENTE (fascia1)
+  Stabilire sconto prima fascia età al 20%
+  Applicare al PREZZO FINALE lo sconto e aggiornare il risultato di PREZZO FINALE
+
+ 2.2 --- altrimenti se ETA' ACQUISITA UTENTE (fascia2)
+  Stabilire sconto seconda fascia età al 40%
+  Applicare al PREZZO FINALE lo sconto e aggiornare il risultato di PREZZO FINALE
+
+ 2.3 --- altrimenti (ETA' ACQUISITA diversa da fascia1 e fascia2)
+  PREZZO FINALE equivale a COSTO per KM inserito da UTENTE
+
+3.
+Restituire a UTENTE il PREZZO FINALE aggiornato, con arrotondamento di 2 decimali
