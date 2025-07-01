@@ -7,4 +7,8 @@ let passengerKm = parseInt(prompt('Inserisci i KM che vuoi percorrere'));
 let cost = priceKm * passengerKm;
 let finalCost;
 
+if (passengerAge <= 17) {
+	finalCost = cost - (cost * 20) / 100;
+}
+
 console.log('Il costo del tuo viaggio è di €', finalCost);
