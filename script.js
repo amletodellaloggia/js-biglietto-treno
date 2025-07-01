@@ -17,6 +17,5 @@ else {
 	finalCost = cost;
 }
 
-
-
-console.log('Il costo del tuo viaggio è di €', finalCost);
+// UTILIZZO TOFIXED(2) PER MOSTRARE LA SECONDA CIFRA DOPO LA VIRGOLA DEL RISULTATO DECIMALE
+console.log('Il costo del tuo viaggio è di €', finalCost.toFixed(2));
